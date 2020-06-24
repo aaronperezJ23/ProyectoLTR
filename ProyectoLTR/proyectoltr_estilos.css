@@ -38,6 +38,7 @@ font-size: 80%;
 h1{
     margin: 30px;
     font-weight: bolder;
+    color: gray;
 }
 
 header > nav > a > img{
