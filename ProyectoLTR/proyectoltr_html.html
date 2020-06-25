@@ -1,193 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Webpage from the Android-based app TV Tracker">
-    <meta name="author" content="Aarón Pérez - Tecoen">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Webpage from the Android-based app TV Tracker"
+    />
+    <meta name="author" content="Aarón Pérez - Tecoen" />
 
     <!-- Nav icon -->
     <link rel="shortcut icon" href="loterias.png" />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="proyectoltr_estilos.css">
-    <link rel="stylesheet" href="FeedEk.css">
+    <link rel="stylesheet" href="proyectoltr_estilos.css" />
+    <link rel="stylesheet" href="FeedEk.css" />
 
     <title>Proyecto Lotería</title>
-
-</head>
-<body>
-    
+  </head>
+  <body>
     <header>
-        <!-- Fixed navbar -->
-        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-          <a class="navbar-brand" href="#"><img src="loterias.png" alt="Loterías"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Resultados<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Botes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#divRss10">Actualidad</a>
-              </li>
-            </ul>
-            <form class="form-inline mt-2 mt-md-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </div>
-        </nav>
-      </header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <a class="navbar-brand" href="#"
+          ><img src="loterias.png" alt="Loterías"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >Resultados<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Botes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#divRss10">Actualidad</a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input
+              class="form-control mr-sm-2"
+              type="text"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
 
     <main role="main" class="container">
-
-        <h1>TODOS LOS SORTEOS DE LOTERÍA NACIONAL</h1>
-        <div id="divRss0"></div>
-        <h1>PRIMITIVA</h1>
-        <div id="divRss1"></div>
-        <h1>EUROMILLONES</h1>
-        <div id="divRss2"></div>
-        <h1>BONOLOTO</h1>
-        <div id="divRss3" styl></div>
-        <h1>EL GORDO DE LA PRIMITIVA</h1>
-        <div id="divRss4" ></div>
-        <h1>LA QUINIELA</h1>
-        <div id="divRss5"></div>
-        <h1>EL QUINIGOL</h1>
-        <div id="divRss6"></div>
-        <h1>LOTOTURF</h1>
-        <div id="divRss7"></div>
-        <h1>ACTUALIDAD</h1>
-        <div id="divRss10"></div>
+      <h1>TODOS LOS SORTEOS DE LOTERÍA NACIONAL</h1>
+      <div id="divRss0"></div>
+      <h1>PRIMITIVA</h1>
+      <div id="divRss1"></div>
+      <h1>EUROMILLONES</h1>
+      <div id="divRss2"></div>
+      <h1>BONOLOTO</h1>
+      <div id="divRss3" styl></div>
+      <h1>EL GORDO DE LA PRIMITIVA</h1>
+      <div id="divRss4"></div>
+      <h1>LA QUINIELA</h1>
+      <div id="divRss5"></div>
+      <h1>EL QUINIGOL</h1>
+      <div id="divRss6"></div>
+      <h1>LOTOTURF</h1>
+      <div id="divRss7"></div>
+      <h1>ACTUALIDAD</h1>
+      <div id="divRss10"></div>
     </main>
 
     <footer class="footer">
-        <div class="container">
-          <span class="text-muted">Place sticky footer content here</span>
-        </div>
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here</span>
+      </div>
     </footer>
 
     <!-- Project Javascript -->
     <script type="text/javascript" src="proyectoltr_javascript.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- RSS Reader -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="FeedEk.min.js"></script>
     <script type="text/javascript">
-        // jQuery
-        $(document).ready(function(){ 
-        
-        $('#alternar-respuesta-ej5').toggle( 
+      // jQuery
+      $(document).ready(function () {
+        $("#alternar-respuesta-ej5").toggle(
+          // Primer click
+          function (e) {
+            $("#respuesta-ej5").slideDown();
+            $(this).text("Ocultar respuesta");
+            e.preventDefault();
+          }, // Separamos las dos funciones con una coma
 
-            // Primer click
-            function(e){ 
-                $('#respuesta-ej5').slideDown();
-                $(this).text('Ocultar respuesta');
-                e.preventDefault();
-            }, // Separamos las dos funciones con una coma
-            
-            // Segundo click
-            function(e){ 
-                $('#respuesta-ej5').slideUp();
-                $(this).text('Ver respuesta');
-                e.preventDefault();
-            }
-
+          // Segundo click
+          function (e) {
+            $("#respuesta-ej5").slideUp();
+            $(this).text("Ver respuesta");
+            e.preventDefault();
+          }
         );
-
-        });
+      });
     </script>
     <script type="text/javascript">
-        $(document).ready(function () {
-
-                $('#divRss0').FeedEk({
-                    FeedUrl:'https://www.loteriasyapuestas.es/es/loteria%2Dnacional/.formatoRSS',
-                    MaxCount : 1,
-                    ShowDesc : true,
-                    ShowPubDate:false,
-                    TitleLinkTarget:'_blank',
-                });
-
-                $('#divRss1').FeedEk({
-                    FeedUrl:'https://www.loteriasyapuestas.es/es/la%2Dprimitiva/resultados/.formatoRSS',
-                    MaxCount : 1,
-                    ShowDesc : true,
-                    ShowPubDate:false,
-                    TitleLinkTarget:'_blank',
-                });
-
-                $('#divRss2').FeedEk({
-                    FeedUrl:'https://www.loteriasyapuestas.es/es/euromillones/resultados/.formatoRSS',
-                    MaxCount : 1,
-                    ShowDesc : true,
-                    ShowPubDate:false,
-                    TitleLinkTarget:'_blank',
-                });
-    
-                $('#divRss3').FeedEk({
-                    FeedUrl:'https://www.loteriasyapuestas.es/es/bonoloto/resultados/.formatoRSS',
-                    MaxCount : 1,
-                    ShowDesc : true,
-                    ShowPubDate:false,
-                    TitleLinkTarget:'_blank',
-                });
-    
-                $('#divRss4').FeedEk({
-                    FeedUrl:'https://www.loteriasyapuestas.es/es/gordo%2Dprimitiva/resultados/.formatoRSS',
-                    MaxCount : 1,
-                    ShowDesc : true,
-                    ShowPubDate:false,
-                    TitleLinkTarget:'_blank',
-                });
-
-                $('#divRss5').FeedEk({
-                    FeedUrl:'https://www.loteriasyapuestas.es/es/la%2Dquiniela/resultados/.formatoRSS',
-                    MaxCount : 1,
-                    ShowDesc : true,
-                    ShowPubDate:false,
-                    TitleLinkTarget:'_blank',
-                });
-
-                $('#divRss6').FeedEk({
-                    FeedUrl:'https://www.loteriasyapuestas.es/es/el%2Dquinigol/resultados/.formatoRSS',
-                    MaxCount : 1,
-                    ShowDesc : true,
-                    ShowPubDate:false,
-                    TitleLinkTarget:'_blank',
-                });
-
-                $('#divRss7').FeedEk({
-                    FeedUrl:'https://www.loteriasyapuestas.es/es/lototurf/resultados/.formatoRSS',
-                    MaxCount : 1,
-                    ShowDesc : true,
-                    ShowPubDate:false,
-                    TitleLinkTarget:'_blank',
-                });
-
-                $('#divRss10').FeedEk({
-                    FeedUrl:'https://www.loteriasyapuestas.es/es/noticias/.formatoRSS',
-                    MaxCount : 10,
-                    ShowDesc : true,
-                    ShowPubDate:false,
-                    TitleLinkTarget:'_blank',
-                });
+      $(document).ready(function () {
+        $("#divRss0").FeedEk({
+          FeedUrl:
+            "https://www.loteriasyapuestas.es/es/loteria%2Dnacional/.formatoRSS",
+          MaxCount: 1,
+          ShowDesc: true,
+          ShowPubDate: false,
+          TitleLinkTarget: "_blank",
         });
-    
+
+        $("#divRss1").FeedEk({
+          FeedUrl:
+            "https://www.loteriasyapuestas.es/es/la%2Dprimitiva/resultados/.formatoRSS",
+          MaxCount: 1,
+          ShowDesc: true,
+          ShowPubDate: false,
+          TitleLinkTarget: "_blank",
+        });
+
+        $("#divRss2").FeedEk({
+          FeedUrl:
+            "https://www.loteriasyapuestas.es/es/euromillones/resultados/.formatoRSS",
+          MaxCount: 1,
+          ShowDesc: true,
+          ShowPubDate: false,
+          TitleLinkTarget: "_blank",
+        });
+
+        $("#divRss3").FeedEk({
+          FeedUrl:
+            "https://www.loteriasyapuestas.es/es/bonoloto/resultados/.formatoRSS",
+          MaxCount: 1,
+          ShowDesc: true,
+          ShowPubDate: false,
+          TitleLinkTarget: "_blank",
+        });
+
+        $("#divRss4").FeedEk({
+          FeedUrl:
+            "https://www.loteriasyapuestas.es/es/gordo%2Dprimitiva/resultados/.formatoRSS",
+          MaxCount: 1,
+          ShowDesc: true,
+          ShowPubDate: false,
+          TitleLinkTarget: "_blank",
+        });
+
+        $("#divRss5").FeedEk({
+          FeedUrl:
+            "https://www.loteriasyapuestas.es/es/la%2Dquiniela/resultados/.formatoRSS",
+          MaxCount: 1,
+          ShowDesc: true,
+          ShowPubDate: false,
+          TitleLinkTarget: "_blank",
+        });
+
+        $("#divRss6").FeedEk({
+          FeedUrl:
+            "https://www.loteriasyapuestas.es/es/el%2Dquinigol/resultados/.formatoRSS",
+          MaxCount: 1,
+          ShowDesc: true,
+          ShowPubDate: false,
+          TitleLinkTarget: "_blank",
+        });
+
+        $("#divRss7").FeedEk({
+          FeedUrl:
+            "https://www.loteriasyapuestas.es/es/lototurf/resultados/.formatoRSS",
+          MaxCount: 1,
+          ShowDesc: true,
+          ShowPubDate: false,
+          TitleLinkTarget: "_blank",
+        });
+
+        $("#divRss10").FeedEk({
+          FeedUrl: "https://www.loteriasyapuestas.es/es/noticias/.formatoRSS",
+          MaxCount: 10,
+          ShowDesc: true,
+          ShowPubDate: false,
+          TitleLinkTarget: "_blank",
+        });
+      });
     </script>
-</body>
+  </body>
 </html>
